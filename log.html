@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Page</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+
+<body class="logc">
+    <header>
+        <header class="header">
+            <h1>Funds Management System</h1>
+            <nav>
+                <div class="nv1">
+                    <a href="main.html">home</a>&nbsp;
+                    <a href="funds.html" >Transaction</a>&nbsp;
+                    <a href="about.html">About</a>&nbsp;
+                    <a href="log.html">login/Register</a>
+                </div>
+            </nav>
+        </header>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="login_process.php" method="POST">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+        
+        <div class="signup-container">
+            <h2>Signup</h2>
+            <form action="signup_process.php" method="POST">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" name="signupUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funds Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Funds Management System</h1>
+        <nav>
+            <div class="nv1">
+                <a href="main.html">home</a>&nbsp;
+                <a href="funds.html" >Transaction</a>&nbsp;
+                <a href="about.html">About</a>&nbsp;
+                <a href="log.html">login/Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="bg">
+            <div class="bgh">
+                <h1>Funds Planning</h1>
+                <div class="sp">
+                    <a href="invest.html">Invest In Mutual Funds</a>
+                    <p>
+                        its safe to invest
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section id="balance">
+            <h3>Current Balance: ₹<span id="balanceAmount">0.00</span></h3>
+        </section>
+        <section id="transactions">
+            <h3>Transaction History</h3>
+            <ul id="transactionList">
+                <!-- Transaction items will be dynamically added here -->
+            </ul>
+        </section>
+        <section id="transactionForm">
+            <h3>Add a Transaction</h3>
+            <input type="text" id="transactionDescription" placeholder="Description">
+            <input type="number" id="transactionAmount" placeholder="Amount">
+            <button id="addTransaction">Add Transaction</button>
+        </section>
+
+        <section id="transactionForm1">
+            <h3>Spends</h3>
+            <input type="text" id="transactionDescriptions" placeholder="Description">
+            <input type="number" id="transactionAmounts" placeholder="Amount">
+            <button id="spendTransaction">Spend</button>
+        </section>
+        
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
